@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FirstAndroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_pay">付款按钮</string>
+    <string name="button_switch">点我切换到第二个Activity</string>
+    <string name="button_switch_activity_rating_seek">切换到Activity_rating_seek</string>
+    <string name="image_view_pay">包子</string>
+    <string name="tv_sex">性别</string>
+    <string name="tv_grade">给自己打个分</string>
+    <string name="tv_process">工作进度</string>
+    <string name="tv_timeout">时间都去哪了</string>
+    <string name="rb_man">男</string>
+    <string name="rb_woman">女</string>
+    <string name="tv_hobby">兴趣</string>
+    <string name="cb_basketball">篮球</string>
+    <string name="cb_football">足球</string>
+    <string name="cb_swim">游泳</string>
+    
+    <string name="button_mainActivity">切换至mainActivity</string>
+    <string name="button_radioCheckBoxActivity">切换至RadioCheckBoxActivity</string>
+    <string name="button_ratingSeekActivity">切换至RatingSeekActivity</string>
+
+</resources>
