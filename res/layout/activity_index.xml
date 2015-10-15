@@ -43,6 +43,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/button_ratingSeekActivity"
                 android:textColor="#FFFFFF" />
+            
+            <Button
+                android:id="@+id/saveAndRecover"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_index_save_and_recover"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
 

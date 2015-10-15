@@ -22,5 +22,8 @@
     <string name="button_mainActivity">切换至mainActivity</string>
     <string name="button_radioCheckBoxActivity">切换至RadioCheckBoxActivity</string>
     <string name="button_ratingSeekActivity">切换至RatingSeekActivity</string>
+    <string name="button_index_save_and_recover">切换至saveAndRecover</string>
+    
+    <string name="button_save_and_revocer_sendBtn">发送</string>
 
 </resources>

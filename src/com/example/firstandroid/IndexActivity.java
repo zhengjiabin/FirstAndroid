@@ -11,6 +11,7 @@ public class IndexActivity extends Activity {
 	private Button mainActivity;
 	private Button radioCheckBoxActivity;
 	private Button ratingSeekActivity;
+	private Button saveAndRecover;
 	private ButtonOnClickListener buttonOnClickListener;
 
 	@Override
@@ -21,11 +22,13 @@ public class IndexActivity extends Activity {
 		mainActivity = (Button) findViewById(R.id.mainActivity);
 		radioCheckBoxActivity = (Button) findViewById(R.id.radioCheckBoxActivity);
 		ratingSeekActivity = (Button) findViewById(R.id.ratingSeekActivity);
+		saveAndRecover = (Button) findViewById(R.id.saveAndRecover);
 
 		buttonOnClickListener = new ButtonOnClickListener();
 		mainActivity.setOnClickListener(buttonOnClickListener);
 		radioCheckBoxActivity.setOnClickListener(buttonOnClickListener);
 		ratingSeekActivity.setOnClickListener(buttonOnClickListener);
+		saveAndRecover.setOnClickListener(buttonOnClickListener);
 	}
 
 	private class ButtonOnClickListener implements OnClickListener {
@@ -44,6 +47,10 @@ public class IndexActivity extends Activity {
 			case R.id.ratingSeekActivity:
 				Intent i3 = new Intent(IndexActivity.this, RatingSeekActivity.class);
 				startActivity(i3);
+				break;
+			case R.id.saveAndRecover:
+				Intent i4 = new Intent(IndexActivity.this, SaveAndRecoverActivity.class);
+				startActivity(i4);
 				break;
 			}
 		}

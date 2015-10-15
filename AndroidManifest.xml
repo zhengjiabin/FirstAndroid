@@ -28,6 +28,10 @@
         </activity>
         <activity android:name="com.example.firstandroid.RatingSeekActivity" >
         </activity>
+        <activity android:name="com.example.firstandroid.SaveAndRecoverActivity" >
+        </activity>
+        <activity android:name="com.example.firstandroid.DataDeliveryByIntent" >
+        </activity>
     </application>
 
 </manifest>
