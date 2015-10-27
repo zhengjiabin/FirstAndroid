@@ -50,6 +50,27 @@
                 android:layout_height="wrap_content"
                 android:text="@string/button_index_save_and_recover"
                 android:textColor="#FFFFFF" />
+            
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_index_camera"
+                android:textColor="#FFFFFF" />
+            
+             <Button
+                android:id="@+id/sendBroadcast"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_index_send_broadcast"
+                android:textColor="#FFFFFF" />
+             
+             <Button
+                android:id="@+id/dynamicRegisterBroadcastReceiver"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_dynamic_register_broadcast_receiver"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
 

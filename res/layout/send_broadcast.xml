@@ -4,23 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <EditText android:id="@+id/contentET"
+    <EditText android:id="@+id/edit_text_send_broadcast"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="text"/>
     
     <Button
-        android:id="@+id/sendBtn"
+        android:id="@+id/button_send_broadcast"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_save_and_revocer_sendBtn"
-        android:textColor="#FFFFFF" />
-    
-    <Button
-        android:id="@+id/returnBtn"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_save_and_revocer_returnBtn"
+        android:text="@string/button_send_broadcast_send"
         android:textColor="#FFFFFF" />
 
 </LinearLayout>

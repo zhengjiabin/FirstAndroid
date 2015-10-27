@@ -4,9 +4,16 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="21" />
+    <uses-sdk android:minSdkVersion="14" 
+        android:targetSdkVersion="23"/>
+
+    <!-- 设置相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    
+    <!-- 监听呼入和呼出权限 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -32,6 +39,25 @@
         </activity>
         <activity android:name="com.example.firstandroid.DataDeliveryByIntent" >
         </activity>
+        <activity android:name="com.example.firstandroid.DataDeliveryByBundle" >
+        </activity>
+        <activity android:name="com.example.firstandroid.StartActivityForRequest" >
+        </activity>
+        <activity android:name="com.example.firstandroid.Camera" >
+        </activity>
+        <activity android:name="com.example.firstandroid.SendBroadcast" >
+        </activity>
+        <activity android:name="com.example.firstandroid.DynamicRegisterBroadcastReceiver" >
+        </activity>
+        
+        <receiver android:name="com.example.broadcast.MyBroadcastReceiver">
+            <!-- priority设置优先级 -->
+			<intent-filter android:priority="1000">
+			   <action android:name="com.test.broadcast"/>
+			   <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+			   <action android:name="android.intent.action.PHONE_STATE"/>
+			</intent-filter>            
+        </receiver>
     </application>
 
 </manifest>

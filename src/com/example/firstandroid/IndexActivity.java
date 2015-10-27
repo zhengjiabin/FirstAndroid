@@ -12,6 +12,9 @@ public class IndexActivity extends Activity {
 	private Button radioCheckBoxActivity;
 	private Button ratingSeekActivity;
 	private Button saveAndRecover;
+	private Button camera;
+	private Button sendBroadcast;
+	private Button dynamicRegisterBroadcastReceiver;
 	private ButtonOnClickListener buttonOnClickListener;
 
 	@Override
@@ -23,36 +26,51 @@ public class IndexActivity extends Activity {
 		radioCheckBoxActivity = (Button) findViewById(R.id.radioCheckBoxActivity);
 		ratingSeekActivity = (Button) findViewById(R.id.ratingSeekActivity);
 		saveAndRecover = (Button) findViewById(R.id.saveAndRecover);
+		camera = (Button) findViewById(R.id.camera);
+		sendBroadcast = (Button) findViewById(R.id.sendBroadcast);
+		dynamicRegisterBroadcastReceiver = (Button) findViewById(R.id.dynamicRegisterBroadcastReceiver);
 
 		buttonOnClickListener = new ButtonOnClickListener();
 		mainActivity.setOnClickListener(buttonOnClickListener);
 		radioCheckBoxActivity.setOnClickListener(buttonOnClickListener);
 		ratingSeekActivity.setOnClickListener(buttonOnClickListener);
 		saveAndRecover.setOnClickListener(buttonOnClickListener);
+		camera.setOnClickListener(buttonOnClickListener);
+		sendBroadcast.setOnClickListener(buttonOnClickListener);
+		dynamicRegisterBroadcastReceiver.setOnClickListener(buttonOnClickListener);
 	}
 
 	private class ButtonOnClickListener implements OnClickListener {
 
 		@Override
 		public void onClick(View v) {
+			Intent intent = null;
+
 			switch (v.getId()) {
 			case R.id.mainActivity:
-				Intent i1 = new Intent(IndexActivity.this, MainActivity.class);
-				startActivity(i1);
+				intent = new Intent(IndexActivity.this, MainActivity.class);
 				break;
 			case R.id.radioCheckBoxActivity:
-				Intent i2 = new Intent(IndexActivity.this, RadioCheckBoxActivity.class);
-				startActivity(i2);
+				intent = new Intent(IndexActivity.this, RadioCheckBoxActivity.class);
 				break;
 			case R.id.ratingSeekActivity:
-				Intent i3 = new Intent(IndexActivity.this, RatingSeekActivity.class);
-				startActivity(i3);
+				intent = new Intent(IndexActivity.this, RatingSeekActivity.class);
 				break;
 			case R.id.saveAndRecover:
-				Intent i4 = new Intent(IndexActivity.this, SaveAndRecoverActivity.class);
-				startActivity(i4);
+				intent = new Intent(IndexActivity.this, SaveAndRecoverActivity.class);
+				break;
+			case R.id.camera:
+				intent = new Intent(IndexActivity.this, Camera.class);
+				break;
+			case R.id.sendBroadcast:
+				intent = new Intent(IndexActivity.this, SendBroadcast.class);
+				break;
+			case R.id.dynamicRegisterBroadcastReceiver:
+				intent = new Intent(IndexActivity.this, DynamicRegisterBroadcastReceiver.class);
 				break;
 			}
+
+			startActivity(intent);
 		}
 
 	}
