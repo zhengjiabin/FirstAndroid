@@ -49,6 +49,8 @@
         </activity>
         <activity android:name="com.example.firstandroid.DynamicRegisterBroadcastReceiver" >
         </activity>
+        <activity android:name="com.example.firstandroid.BarcodeScaner" >
+        </activity>
         
         <receiver android:name="com.example.broadcast.MyBroadcastReceiver">
             <!-- priority设置优先级 -->

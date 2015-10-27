@@ -71,6 +71,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/button_dynamic_register_broadcast_receiver"
                 android:textColor="#FFFFFF" />
+             
+             <Button
+                android:id="@+id/barcodeScaner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_barcode_scaner"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
 

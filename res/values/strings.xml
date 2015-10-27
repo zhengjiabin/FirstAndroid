@@ -26,6 +26,7 @@
     <string name="button_index_camera">切换至camera</string>
     <string name="button_index_send_broadcast">切换至发送广播</string>
     <string name="button_dynamic_register_broadcast_receiver">切换至动态注册广播接收器</string>
+    <string name="button_barcode_scaner">切换barcodeScaner</string>
     
     <string name="button_save_and_revocer_sendBtn">发送</string>
     <string name="button_save_and_revocer_returnBtn">返回</string>
@@ -35,5 +36,8 @@
     <string name="button_camera_take_photo">调用内置相机拍照</string>
     
     <string name="button_send_broadcast_send">发送</string>
+    
+    <string name="button_barcode_scaners">启动barcodeScaner扫描条形码</string>
+    <string name="text_view_barcode_scaner">条码扫描结果：</string>
 
 </resources>
