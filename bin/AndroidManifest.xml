@@ -51,8 +51,14 @@
         </activity>
         <activity android:name="com.example.firstandroid.BarcodeScaner" >
         </activity>
+        <activity android:name="com.example.firstandroid.ThreadActivity" >
+        </activity>
+        <activity android:name="com.example.firstandroid.StartService" >
+        </activity>
         
-        <receiver android:name="com.example.broadcast.MyBroadcastReceiver">
+        <service android:name="com.example.service.Service01"></service>
+        
+        <receiver android:name="com.example.broadcast.MyBroadcastReceiver" android:exported="false">
             <!-- priority设置优先级 -->
 			<intent-filter android:priority="1000">
 			   <action android:name="com.test.broadcast"/>

@@ -78,6 +78,20 @@
                 android:layout_height="wrap_content"
                 android:text="@string/button_barcode_scaner"
                 android:textColor="#FFFFFF" />
+             
+             <Button
+                android:id="@+id/thread"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_thread"
+                android:textColor="#FFFFFF" />
+             
+             <Button
+                android:id="@+id/switch_start_service"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_switch_start_service"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
 

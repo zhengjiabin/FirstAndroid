@@ -18,6 +18,8 @@ public class IndexActivity extends Activity {
 	private Button sendBroadcast;
 	private Button dynamicRegisterBroadcastReceiver;
 	private Button barcodeScaner;
+	private Button thread;
+	private Button startService;
 	private ButtonOnClickListener buttonOnClickListener;
 	private long exitTime = 0;
 
@@ -34,6 +36,8 @@ public class IndexActivity extends Activity {
 		sendBroadcast = (Button) findViewById(R.id.sendBroadcast);
 		dynamicRegisterBroadcastReceiver = (Button) findViewById(R.id.dynamicRegisterBroadcastReceiver);
 		barcodeScaner = (Button) findViewById(R.id.barcodeScaner);
+		thread = (Button) findViewById(R.id.thread);
+		startService = (Button) findViewById(R.id.switch_start_service);
 
 		buttonOnClickListener = new ButtonOnClickListener();
 		mainActivity.setOnClickListener(buttonOnClickListener);
@@ -44,6 +48,8 @@ public class IndexActivity extends Activity {
 		sendBroadcast.setOnClickListener(buttonOnClickListener);
 		dynamicRegisterBroadcastReceiver.setOnClickListener(buttonOnClickListener);
 		barcodeScaner.setOnClickListener(buttonOnClickListener);
+		thread.setOnClickListener(buttonOnClickListener);
+		startService.setOnClickListener(buttonOnClickListener);
 	}
 
 	private class ButtonOnClickListener implements OnClickListener {
@@ -76,6 +82,12 @@ public class IndexActivity extends Activity {
 				break;
 			case R.id.barcodeScaner:
 				intent = new Intent(IndexActivity.this, BarcodeScaner.class);
+				break;
+			case R.id.thread:
+				intent = new Intent(IndexActivity.this, ThreadActivity.class);
+				break;
+			case R.id.switch_start_service:
+				intent = new Intent(IndexActivity.this, StartService.class);
 				break;
 			}
 
