@@ -92,6 +92,27 @@
                 android:layout_height="wrap_content"
                 android:text="@string/button_switch_start_service"
                 android:textColor="#FFFFFF" />
+             
+             <Button
+                android:id="@+id/switch_bind_service"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_switch_bind_service"
+                android:textColor="#FFFFFF" />
+             
+             <Button
+                android:id="@+id/switch_start_and_bind_service"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_switch_start_and_bind_service"
+                android:textColor="#FFFFFF" />
+             
+             <Button
+                android:id="@+id/switch_remote_service"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/switch_remote_service"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
 

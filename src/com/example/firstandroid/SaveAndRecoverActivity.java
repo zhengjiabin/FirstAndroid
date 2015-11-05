@@ -37,7 +37,6 @@ public class SaveAndRecoverActivity extends Activity {
 		if (savedInstanceState != null) {
 			value = savedInstanceState.getString("content");
 			Toast.makeText(this, value, Toast.LENGTH_SHORT).show();
-			;
 		}
 
 		sendButton = (Button) findViewById(R.id.sendBtn);

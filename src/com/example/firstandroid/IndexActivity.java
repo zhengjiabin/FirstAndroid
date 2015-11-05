@@ -20,6 +20,9 @@ public class IndexActivity extends Activity {
 	private Button barcodeScaner;
 	private Button thread;
 	private Button startService;
+	private Button bindService;
+	private Button startAndBindService;
+	private Button remoteService;
 	private ButtonOnClickListener buttonOnClickListener;
 	private long exitTime = 0;
 
@@ -38,6 +41,9 @@ public class IndexActivity extends Activity {
 		barcodeScaner = (Button) findViewById(R.id.barcodeScaner);
 		thread = (Button) findViewById(R.id.thread);
 		startService = (Button) findViewById(R.id.switch_start_service);
+		bindService = (Button) findViewById(R.id.switch_bind_service);
+		startAndBindService = (Button) findViewById(R.id.switch_start_and_bind_service);
+		remoteService = (Button) findViewById(R.id.switch_remote_service);
 
 		buttonOnClickListener = new ButtonOnClickListener();
 		mainActivity.setOnClickListener(buttonOnClickListener);
@@ -50,6 +56,9 @@ public class IndexActivity extends Activity {
 		barcodeScaner.setOnClickListener(buttonOnClickListener);
 		thread.setOnClickListener(buttonOnClickListener);
 		startService.setOnClickListener(buttonOnClickListener);
+		bindService.setOnClickListener(buttonOnClickListener);
+		startAndBindService.setOnClickListener(buttonOnClickListener);
+		remoteService.setOnClickListener(buttonOnClickListener);
 	}
 
 	private class ButtonOnClickListener implements OnClickListener {
@@ -89,6 +98,15 @@ public class IndexActivity extends Activity {
 			case R.id.switch_start_service:
 				intent = new Intent(IndexActivity.this, StartService.class);
 				break;
+			case R.id.switch_bind_service:
+				intent = new Intent(IndexActivity.this, BindService.class);
+				break;
+			case R.id.switch_start_and_bind_service:
+				intent = new Intent(IndexActivity.this, StartAndBindService.class);
+				break;
+			case R.id.switch_remote_service:
+				intent = new Intent(IndexActivity.this, RemoteService.class);
+				break;
 			}
 
 			startActivity(intent);
@@ -102,25 +120,32 @@ public class IndexActivity extends Activity {
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		// 应用程序退出方式一：确认退出对话框
-		/*
-		 * if (keyCode == KeyEvent.KEYCODE_BACK) { Builder builder = new
-		 * AlertDialog.Builder(this); builder.setTitle("退出");
-		 * builder.setMessage("确认退出当前应用？");
-		 * 
-		 * builder.setPositiveButton("确认", new DialogInterface.OnClickListener()
-		 * {
-		 * 
-		 * @Override public void onClick(DialogInterface dialog, int which) {
-		 * finish(); } });
-		 * 
-		 * builder.setNegativeButton("取消", new DialogInterface.OnClickListener()
-		 * {
-		 * 
-		 * @Override public void onClick(DialogInterface dialog, int which) {
-		 * return; } });
-		 * 
-		 * builder.show(); }
-		 */
+
+		// if (keyCode == KeyEvent.KEYCODE_BACK) {
+		// Builder builder = new AlertDialog.Builder(this);
+		// builder.setTitle("退出");
+		// builder.setMessage("确认退出当前应用？");
+		//
+		// builder.setPositiveButton("确认", new DialogInterface.OnClickListener()
+		// {
+		//
+		// @Override
+		// public void onClick(DialogInterface dialog, int which) {
+		// finish();
+		// }
+		// });
+		//
+		// builder.setNegativeButton("取消", new DialogInterface.OnClickListener()
+		// {
+		//
+		// @Override
+		// public void onClick(DialogInterface dialog, int which) {
+		// return;
+		// }
+		// });
+		//
+		// builder.show();
+		// }
 
 		// 应用程序退出方式二：连续按两次确认退出
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {

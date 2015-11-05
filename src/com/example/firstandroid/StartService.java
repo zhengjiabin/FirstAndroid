@@ -9,6 +9,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+/**
+ * 启动型服务
+ * @author Administrator
+ *
+ */
 public class StartService extends Activity {
 	private Button start, end;
 

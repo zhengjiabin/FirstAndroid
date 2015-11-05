@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:id="@+id/start_and_bind_text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_and_bind_text_view_title"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+    
+    <Button
+        android:id="@+id/start_and_bind_start_service"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_start_and_bind_start_service"
+        android:textColor="#FF00FF"/>
+    
+    <Button
+        android:id="@+id/start_and_bind_stop_service"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_start_and_bind_stop_service"
+        android:textColor="#FF0000" />
+    
+    <Button
+        android:id="@+id/start_and_bind_bind_service"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_start_and_bind_bind_service"
+        android:textColor="#1100cc"/>
+    
+    <Button
+        android:id="@+id/start_and_bind_unBind_service"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_start_and_bind_unBind_service"
+        android:textColor="#00FF00" />
+
+</LinearLayout>

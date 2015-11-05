@@ -55,8 +55,18 @@
         </activity>
         <activity android:name="com.example.firstandroid.StartService" >
         </activity>
+        <activity android:name="com.example.firstandroid.BindService" >
+        </activity>
+        <activity android:name="com.example.firstandroid.StartAndBindService" >
+        </activity>
+        <activity android:name="com.example.firstandroid.RemoteService" >
+        </activity>
         
         <service android:name="com.example.service.Service01"></service>
+        <service android:name="com.example.service.BindService"></service>
+        <service android:name="com.example.service.StartAndBindService"></service>
+        <service android:name="com.example.service.RemoteService"></service>
+        <service android:name="com.example.service.AidlService"></service>
         
         <receiver android:name="com.example.broadcast.MyBroadcastReceiver" android:exported="false">
             <!-- priority设置优先级 -->

@@ -29,6 +29,9 @@
     <string name="button_barcode_scaner">切换barcodeScaner</string>
     <string name="button_thread">切换Thead</string>
     <string name="button_switch_start_service">切换startService</string>
+    <string name="button_switch_bind_service">切换bindService</string>
+    <string name="button_switch_start_and_bind_service">切换start_and_bind_Service</string>
+    <string name="switch_remote_service">切换remote_Service</string>
     
     <string name="button_save_and_revocer_sendBtn">发送</string>
     <string name="button_save_and_revocer_returnBtn">返回</string>
@@ -49,5 +52,23 @@
     
     <string name="button_start_service">启动Service</string>
     <string name="button_end_service">结束Service</string>
+    
+    <string name="text_view_title">绑定型服务</string>
+    <string name="button_bind_start_service">启动Service</string>
+    <string name="button_bind_end_service">结束Service</string>
+    
+    <string name="start_and_bind_text_view_title">启动和绑定型服务</string>
+    <string name="button_start_and_bind_start_service">start</string>
+    <string name="button_start_and_bind_stop_service">stop</string>
+    <string name="button_start_and_bind_bind_service">bind</string>
+    <string name="button_start_and_bind_unBind_service">unBind</string>
+    
+    <string name="text_view_remote_service">跨进程通信实例：</string>
+    <string name="text_view_reception_service">前台服务实例：</string>
+    <string name="button_bind_aidl_service">绑定AIDL服务</string>
+    <string name="button_call_aidl_service">调用AIDL服务</string>
+    <string name="button_cancel_bind_aidl_serivce">取消绑定AIDL服务</string>
+    <string name="button_start_reception_serivce">启动前台服务</string>
+    <string name="button_stop_reception_serivce">停止前台服务</string>
 
 </resources>
