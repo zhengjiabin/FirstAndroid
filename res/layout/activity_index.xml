@@ -113,6 +113,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/switch_remote_service"
                 android:textColor="#FFFFFF" />
+             
+             <Button
+                android:id="@+id/switch_menu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/switch_menu"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
 

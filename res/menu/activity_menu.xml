@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.firstandroid.Menu" >
+
+    <group>
+        <item
+            android:id="@+id/action_settings"
+            android:orderInCategory="100"
+            android:showAsAction="never"
+            android:title="@string/action_settings">
+            <menu>
+                <item
+                    android:id="@+id/subMenu"
+                    android:title="@string/subMenu">
+                </item>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/menuItem1"
+            android:title="@string/menuItem1">
+        </item>
+        <item
+            android:id="@+id/menuItem2"
+            android:title="@string/menuItem2">
+        </item>
+    </group>
+
+</menu>
