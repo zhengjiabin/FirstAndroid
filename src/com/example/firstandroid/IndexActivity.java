@@ -24,6 +24,7 @@ public class IndexActivity extends Activity {
 	private Button startAndBindService;
 	private Button remoteService;
 	private Button menu;
+	private Button fragment;
 	private ButtonOnClickListener buttonOnClickListener;
 	private long exitTime = 0;
 
@@ -46,6 +47,7 @@ public class IndexActivity extends Activity {
 		startAndBindService = (Button) findViewById(R.id.switch_start_and_bind_service);
 		remoteService = (Button) findViewById(R.id.switch_remote_service);
 		menu = (Button) findViewById(R.id.switch_menu);
+		fragment = (Button) findViewById(R.id.switch_fragment);
 
 		buttonOnClickListener = new ButtonOnClickListener();
 		mainActivity.setOnClickListener(buttonOnClickListener);
@@ -62,6 +64,7 @@ public class IndexActivity extends Activity {
 		startAndBindService.setOnClickListener(buttonOnClickListener);
 		remoteService.setOnClickListener(buttonOnClickListener);
 		menu.setOnClickListener(buttonOnClickListener);
+		fragment.setOnClickListener(buttonOnClickListener);
 	}
 
 	private class ButtonOnClickListener implements OnClickListener {
@@ -112,6 +115,9 @@ public class IndexActivity extends Activity {
 				break;
 			case R.id.switch_menu:
 				intent = new Intent(IndexActivity.this, Menu.class);
+				break;
+			case R.id.switch_fragment:
+				intent = new Intent(IndexActivity.this, ShowFragment.class);
 				break;
 			}
 

@@ -32,6 +32,8 @@
     <string name="button_switch_start_and_bind_service">切换start_and_bind_Service</string>
     <string name="switch_remote_service">切换remote_Service</string>
     <string name="switch_menu">切换menu</string>
+    <string name="switch_fragment">切换fragment</string>
+    
     <string name="button_save_and_revocer_sendBtn">发送</string>
     <string name="button_save_and_revocer_returnBtn">返回</string>
     <string name="button_start_activity_for_request">点击返回</string>
@@ -40,10 +42,12 @@
     <string name="button_send_broadcast_send">发送</string>
     <string name="button_barcode_scaners">启动barcodeScaner扫描条形码</string>
     <string name="text_view_barcode_scaner">条码扫描结果：</string>
+    
     <string name="button_thread_main">主线程</string>
     <string name="button_thread1">子线程1</string>
     <string name="button_thread2">子线程2</string>
     <string name="button_thread3">子线程3</string>
+    
     <string name="button_start_service">启动Service</string>
     <string name="button_end_service">结束Service</string>
     <string name="text_view_title">绑定型服务</string>
@@ -54,6 +58,7 @@
     <string name="button_start_and_bind_stop_service">stop</string>
     <string name="button_start_and_bind_bind_service">bind</string>
     <string name="button_start_and_bind_unBind_service">unBind</string>
+    
     <string name="text_view_remote_service">跨进程通信实例：</string>
     <string name="text_view_reception_service">前台服务实例：</string>
     <string name="button_bind_aidl_service">绑定AIDL服务</string>
@@ -61,10 +66,13 @@
     <string name="button_cancel_bind_aidl_serivce">取消绑定AIDL服务</string>
     <string name="button_start_reception_serivce">启动前台服务</string>
     <string name="button_stop_reception_serivce">停止前台服务</string>
+    
     <string name="subMenu">子菜单</string>
     <string name="menuItem1">菜单一</string>
     <string name="menuItem2">菜单二</string>
     <string name="OpenContextMenu">OpenContextMenu</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string name="text_change_rightfragment">动态改变rightFragment</string>
 
 </resources>

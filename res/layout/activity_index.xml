@@ -120,6 +120,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/switch_menu"
                 android:textColor="#FFFFFF" />
+             
+             <Button
+                android:id="@+id/switch_fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/switch_fragment"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
 
